@@ -1,0 +1,100 @@
+@font-face{
+    font-family: "bernina";
+    src: url("fonts/BerninaSans-Web-CondensedBold.woff2");
+}
+
+@media only screen and (max-width: 768px) {
+    #bas .bandeau  {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #bas .bandeau {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body {
+    background-color: #f7ffff;
+    margin: 0;
+}
+
+#haut {
+    position: relative;
+}
+
+#haut p {
+    position: absolute;
+    bottom: 75%;
+    left: 75%;
+    background-color: #810426;
+    color: white;
+    font-family: "Century Gothic";
+    border-radius: 4px;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    transform: rotate(25deg);
+}
+
+#haut small {
+    font-size: 60%;
+}
+
+.fond {
+    width: 100%;
+    height: auto;
+}
+
+#principal {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#principal .texte {
+    font-family: bernina;
+    color: #285666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#principal .bandeau {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bas {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#bas .bandeau {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Century Gothic";
+    color: #285666;
+    text-align: center;
+}
+
+#bas .texte {
+    text-align: right;
+    font-family: "Century Gothic";
+    color: #285666;
+    margin-bottom: 20px;
+}
+
+.image {
+    border-radius:100px;
+    width:150px;
+    height:150px;
+}
+
+.bouton {
+    font-family: "Century Gothic";
+    background-color: #f7ffff;
+    color: #285666;
+    border: 1px solid #285666;
+    border-radius:2px;
+}
